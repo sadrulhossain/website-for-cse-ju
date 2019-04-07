@@ -1,0 +1,22 @@
+#server-alert {
+    top: 55px;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.sort-table tr {
+    cursor: move;
+}
+
+.breadcrumb {
+    text-transform: uppercase;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px !important;
+}

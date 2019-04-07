@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.juniv.edu/login by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jul 2018 16:45:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+    <title>Login Page</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Admin - Jahangirnagar University</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/sb-admin.css" rel="stylesheet">
+<link href="css/profile.css" rel="stylesheet">
+<link href="css/juniv-admin.css" rel="stylesheet">
+
+
+<!-- Morris Charts CSS -->
+
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="../cloud.tinymce.com/stable/tinymce.mine122.js?apiKey=w3tjzv4s7j3diz0ckghix0nxfow89euytbah6tdf3c5zpmw0"></script>
+<script>
+    tinymce.init({
+        selector: '.tinymce',
+        plugins: "advlist autolink link image lists charmap print preview autoresize table code textcolor colorpicker",
+        toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | forecolor backcolor"
+    });
+//browser_spellcheck: true,
+//    tinymce.init({
+//        selector: '.tinymce',
+//        theme: 'modern',
+//        width: 600,
+//        height: 300,
+//        plugins: [
+//            'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+//            'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+//            'save table contextmenu directionality emoticons template paste textcolor'
+//        ],
+//        content_css: 'css/content.css',
+//        toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons'
+//    });
+</script>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061083-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107061083-1');
+</script>
+
+
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+    <style>
+        .error {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
+
+        .msg {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: #31708f;
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+        }
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+        .form-signin .form-signin-heading, .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+        .form-signin input[type="text"] {
+            margin-bottom: -1px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .account-wall {
+            margin-top: 20px;
+            padding: 40px 0px 20px 0px;
+            background-color: #f7f7f7;
+            -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-title {
+            color: #555;
+            font-size: 18px;
+            font-weight: 400;
+            display: block;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 10px;
+            display: block;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .need-help {
+            margin-top: 10px;
+        }
+
+        .new-account {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body onload='document.loginForm.username.focus();'>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <a href="home.html">
+                <img src="client-v2/images/logo-v3.png" width="95%">
+            </a>
+                        
+            <div class="account-wall">
+                <img class="profile-img" src="client/images/sign-in-photo.png" alt="">
+
+                <form class="form-signin" name='loginForm' action="http://www.juniv.edu/j_spring_security_check" method='POST'>
+                    <input type="hidden" name="_csrf" value="6909ca59-3500-4b7d-8561-fbef5bb0d46e"/>
+
+                    <input type="text" name="username" class="form-control" placeholder="Email" required autofocus>
+                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit"> Sign in </button>
+                </form>
+            </div>
+            <a href="forgotPassword.html" class="text-center new-account">Forgot Password?</a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<!-- Mirrored from www.juniv.edu/login by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jul 2018 16:45:35 GMT -->
+</html>
